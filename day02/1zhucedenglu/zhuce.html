@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        form {
+            width: 250px;
+            height: 200px;
+            border: 1px solid #999;
+            float: left;
+        }
+
+        form>input {
+            margin-top: 20px;
+        }
+
+        form>input:nth-of-type(2) {
+            margin-left: 20px;
+        }
+
+        form>.submit {
+            display: block;
+            margin: 20px auto;
+        }
+
+        p {
+            text-align: center;
+        }
+        .denglu{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="http://127.0.0.1:3000" method="get" class="zhuce">
+        <p>注册</p>
+        用户名: <input type="text" name='username' />
+        密码:<input type="password" name='password' />
+        <input type="submit" value='提交' class="submit" />
+    </form>
+
+    <form action="http://127.0.0.1:4000" method="get" class="denglu">
+        <p>登录</p>
+        用户名: <input type="text" name='username' />
+        密码:<input type="password" name='password' />
+        <input type="submit" value='提交' class="submit" />
+    </form>
+</body>
+
+</html>
